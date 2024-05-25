@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to top, green, lightgreen);
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.container {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.form-container {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow: hidden;
+}
+.col-left {
+  width: 50%;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+}
+
+#heading {
+  margin: 25px;
+  color: green;
+  display: block;
+}
+
+#para {
+  font-weight: 400;
+  list-style: none;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+
+.my-label {
+  font-weight: 600;
+  margin-top: 10px;
+  margin-left: 25px;
+  display: block;
+}
+.input-field {
+  height: 30px;
+  width: 420px;
+  margin-left: 25px;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  border-color: lightgray;
+  border-radius: 5px;
+  display: flex;
+}
+
+::placeholder {
+  color: green;
+  padding: 8px;
+}
+
+.my-select {
+  height: 40px;
+  width: 400px;
+  margin-left: 25px;
+  margin-top: 4px;
+  color: green;
+  padding: 8px;
+}
+
+fieldset {
+  width: 430px;
+  margin-left: 25px;
+}
+.radio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+  margin-left: 15px;
+  padding-top: 8px;
+  gap: 30px;
+  display: flex;
+}
+
+.radio-container .label2 {
+  margin: 30px;
+}
+.column .my-radio {
+  margin-bottom: 18px;
+}
+
+.label2 {
+  margin-left: 25px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.radio2 {
+  margin-left: 25px;
+  margin-top: 12px;
+}
+
+.my-text {
+  height: 80px;
+  width: 420px;
+  margin-left: 25px;
+  margin-top: 4px;
+}
+
+.col-right {
+  width: 50%;
+  float: right;
+}
+
+#submit {
+  height: 40px;
+  width: 450px;
+  display: block;
+  margin-top: 15px;
+  margin-left: 25px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(39, 155, 39);
+  color: white;
+}

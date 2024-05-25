@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="form-container">
+        <header id="heading"><h1>Survey Form</h1></header>
+        <p id="para">
+          Feel Free To Answer The Question Below Based On Your Own Experience
+          And Opinion. If You Are Not Convenient In Answering A Particular
+          Question Please Skip It By Answering "No". Every Answer Would Be Very
+          Appreciated. Thank You For Your Time.
+        </p>
+
+        <form class="form-content">
+          <div class="col-left">
+            <div>
+              <label class="my-label" for="name">Your Name</label>
+              <input
+                class="input-field"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <div>
+              <label class="my-label" for="email">Your Email Address</label>
+              <input
+                class="input-field"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="user@user.com"
+                required
+              />
+            </div>
+
+            <div>
+              <label class="my-label" for="phone">Your Phone Number</label>
+              <input
+                class="input-field"
+                type="number"
+                id="number"
+                name="number"
+                placeholder="99999999"
+                required
+              />
+            </div>
+
+            <div>
+              <label class="my-label" for="state">Where Do You Live</label>
+              <select class="my-select" name="state" id="state" required>
+                <option id="my-option" selected disabled hidden>Select</option>
+                <option>Delhi</option>
+                <option>Punjab</option>
+                <option>Maharastra</option>
+                <option>Rajasthan</option>
+              </select>
+            </div>
+
+            <fieldset>
+              <legend>Age</legend>
+              <div class="radio-container">
+                <div class="column">
+                  <input
+                    class="my-radio"
+                    type="radio"
+                    name="age"
+                    required
+                  /><label class="label2" for="age1"> 15-20 </label>
+                  <br />
+
+                  <input
+                    class="my-radio"
+                    type="radio"
+                    name="age"
+                    required
+                  /><label class="label2" for="age2"> 20-30</label>
+                  <br />
+
+                  <input
+                    class="my-radio"
+                    type="radio"
+                    name="age"
+                    required
+                  /><label class="label2" for="age3">31-40</label>
+                  <br />
+                </div>
+
+                <div class="column">
+                  <input
+                    class="my-radio"
+                    type="radio"
+                    name="age"
+                    required
+                  /><label class="label2" for="age4">41-50</label>
+                  <br />
+                  <input
+                    class="my-radio"
+                    type="radio"
+                    name="age"
+                    required
+                  /><label class="label2" for="age5">Prefer not to say</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <div>
+              <label class="my-label" for="proficiency"
+                >How would you rate your proficiency in coding</label
+              >
+              <input
+                class="radio2"
+                type="radio"
+                name="proficiency"
+                required
+              /><label class="label2" for="profi1">Beginner</label>
+              <br />
+              <input
+                class="radio2"
+                type="radio"
+                name="proficiency"
+                required
+              /><label class="label2" for="profi2">Intermediate</label>
+              <br />
+              <input
+                class="radio2"
+                type="radio"
+                name="proficiency"
+                required
+              /><label class="label2" for="profi3">Advance</label>
+            </div>
+          </div>
+
+          <div class="col-right">
+            <label class="my-label" for="contest"
+              >Have You Ever Appered in any coding contest?</label
+            >
+            <input class="radio2" type="radio" name="contest" required /><label
+              class="label2"
+              for="appered1"
+              >Yes</label
+            >
+            <br />
+            <input class="radio2" type="radio" name="contest" required /><label
+              class="label2"
+              for="appered2"
+              >No</label
+            >
+
+            <label class="my-label" for="passion"
+              >Discuss what drives your passion for coding and outline your
+              aspirations in the field.</label
+            >
+            <textarea
+              class="my-text"
+              name="passion"
+              id="passion"
+              maxlength="100"
+              required
+            ></textarea>
+
+            <label class="my-label" for="challenges"
+              >What are some of the challenges you face while coding?</label
+            >
+            <textarea
+              class="my-text"
+              name="challenges"
+              id="challenges"
+              maxlength="100"
+              required
+            ></textarea>
+
+            <label class="my-label" for="understanding"
+              >Please list the Data Structures you have a strong understanding
+              of.</label
+            >
+            <textarea
+              class="my-text"
+              name="understanding"
+              id="understanding"
+              maxlength="100"
+              required
+            ></textarea>
+            <button id="submit" type="submit">Submit Form</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
